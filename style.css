@@ -1,0 +1,227 @@
+body {
+  background-color:rgb(34, 34, 34);
+  margin: 0;
+  font-family: Open Sans,Helvetica Neue,Arial;
+  font-weight: 400;
+}
+
+.container-main {
+  width: 30%;
+  margin: 0 auto;
+}
+
+header {
+  background-color: rgb(255, 255, 255);
+}
+
+header::after {
+  content: '';
+  display: table;
+  clear: both;
+}
+
+nav {
+  float: right;
+}
+
+nav ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+nav li {
+  display: inline-block;
+  margin-left: 70px;
+  padding: 23px 0 10px 0;
+  position: relative;
+}
+
+nav a {
+  color: rgb(34, 34, 34);
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 14px;
+}
+
+nav a.hover {
+  color: rgb(0, 0, 0);
+}
+
+nav a::before {
+  content: '';
+  display: block;
+  height: 3px;
+  background-color: rgb(64, 64, 64);
+
+  position: absolute;
+  top: 0;
+  width: 0%;
+
+  transition: all ease-in-out 300ms;
+}
+
+nav a:hover::before {
+  width: 100%;
+}
+
+.footer {
+  margin: 800px auto 0px;
+}
+
+footer {
+  background-color: rgb(20, 20, 20);
+  color: rgb(240, 240, 240);
+
+  text-align: center;
+
+  padding: 1px 0 1px;
+}
+
+.logo {
+  float: left;
+  margin: 0;
+  top: 10px;
+  position: absolute;
+}
+
+.background {
+  margin: 0;
+  top: 125px;
+  position: absolute;
+}
+
+h1 {
+  background-color: rgb(240, 255, 255);
+  color:black;
+  text-align: center;
+  font-size: 60px;
+  margin: 0;
+  height: 70px;
+  padding: 50px;
+}
+
+h2 {
+  background-color: rgb(240, 255, 255);
+  color:black;
+  text-align: center;
+  font-size: 40px;
+  margin: 50px;
+  height: 50px;
+  padding: 30px;
+}
+
+.starting-info {
+  color: rgb(180, 180, 180);
+  line-height: 30px;
+  text-align: center;
+  font-size: 22px;
+  font-weight: 200;
+  margin: 30px 15%;
+  font-family: 'Times New Roman', Times, serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.questions {
+  background-color: rgb(240, 255, 255);
+  color:black;
+  text-align: center;
+  font-size: 40px;
+  margin: 0;
+  height: 60px;
+  padding: 30px;
+}
+
+.container {
+  margin: 50px;
+  padding: 30px;
+  background-color:rgb(255, 255, 255);
+  font-size: 25px;
+  font-family: Open Sans,Helvetica Neue,Arial;
+  font-weight: 550;
+  font-style: normal;
+  display: block;
+  position: relative;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.container input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+}
+
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 25px;
+  width: 25px;
+  background-color: #eee;
+  border-radius: 50%;
+}
+
+.container:hover input ~ .checkmark {
+  background-color: #ccc;
+}
+
+.container input:checked ~ .checkmark {
+  background-color: #2196F3;
+}
+
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+.container input:checked ~ .checkmark:after {
+  display: block;
+}
+
+.container .checkmark:after {
+ 	top: 9px;
+	left: 9px;
+	width: 8px;
+	height: 8px;
+	border-radius: 50%;
+	background: white;
+}
+
+.chartP {
+  margin: 10px 10%;
+}
+
+.buttonTest {
+  background-color:rgb(255, 255, 255);
+  font-size: 25px;
+  font-family: Open Sans,Helvetica Neue,Arial;
+  border: 5px solid rgb(240, 255, 255);
+  border-radius: 50px;
+  width: 450px;
+  height: 80px;
+  margin: 10px 40%;
+}
+
+button:focus {
+  border: none;
+}
+
+#topbtn {
+  background-color:rgb(230, 230, 200);
+  font-size: 25px;
+  position: fixed;
+  bottom: 0;
+  right: 0;
+}
+
+.lnk {
+  font-style: none;
+  text-decoration: none;
+  color: rgb(0, 0, 0);
+}
